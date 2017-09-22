@@ -21,6 +21,7 @@ func main() {
 	}
 
 	fmt.Println("Unknown argument " + command)
+	os.Exit(1)
 }
 
 func Anleitung() {
@@ -35,13 +36,13 @@ func Anleitung() {
 func RemainingTill() {
 	if len(os.Args) != 3 {
 		fmt.Println("Parameters not ok")
-		return
+		os.Exit(1)
 	}
 
 	untilHour, err := strconv.ParseInt(os.Args[2], 10, 64)
 	if err != nil {
 		fmt.Println("Could not parse your hour parameter.")
-		return
+		os.Exit(1)
 	}
 
 	var currentTime int
