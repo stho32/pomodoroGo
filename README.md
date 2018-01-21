@@ -1,4 +1,6 @@
-# README #
+# README 
+
+[![CircleCI](https://circleci.com/gh/stho32/pomodoroGo.svg?style=svg)](https://circleci.com/gh/stho32/pomodoroGo)
 
 ### What is this repository for? ###
 
